@@ -29,6 +29,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'DDDeviceInfo/Classes/**/*'
-  s.frameworks = 'sys', 'arpa', 'Foundation', 'ifaddrs'
+#s.frameworks = 'sys', 'arpa', 'Foundation', 'ifaddrs'
 
 end
