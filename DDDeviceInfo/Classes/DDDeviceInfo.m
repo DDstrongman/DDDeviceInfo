@@ -10,7 +10,7 @@
 #import <sys/utsname.h>
 #import <arpa/inet.h>
 #import <ifaddrs.h>
-//#import <AdSupport/ASIdentifierManager.h>
+#import <AdSupport/ASIdentifierManager.h>
 
 @implementation DDDeviceInfo
 
@@ -36,12 +36,12 @@
     return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 }
 
-//- (NSString *)idfa {
-//    if ([[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString] isEqualToString:@"00000000-0000-0000-0000-000000000000"]) {
-//        return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-//    }
-//    return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-//}
+- (NSString *)idfa {
+    if ([[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString] isEqualToString:@"00000000-0000-0000-0000-000000000000"]) {
+        return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    }
+    return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+}
 
 - (NSString *)deviceIP {
     return [self deviceIPAdress];
