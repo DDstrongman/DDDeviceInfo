@@ -6,8 +6,7 @@
 
 **核心功能是实现了目前已知所有苹果设备的设备名称获取(deviceName字段)，更新至2019新设备发布后，并将持续维护更新** <br>
 
-**获取iOS设备信息的工具类**<br>
-属性列表： <br>
+**设备列表：** <br>
 
 ```objective-c
 // iPhone
@@ -151,6 +150,8 @@
     if ([platform isEqualToString:@"i386"])      return @"iPhone Simulator";
     if ([platform isEqualToString:@"x86_64"])    return @"iPhone Simulator";
 ```
+**获取其他属性列表：**<br>
+
 ```objective-c
 /**
 app名称
