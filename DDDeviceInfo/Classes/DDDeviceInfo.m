@@ -71,14 +71,17 @@
     NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
     
     // iPhone
+    if ([platform isEqualToString:@"iPhone12,5"])   return @"iPhone 11 Pro Max";
+    if ([platform isEqualToString:@"iPhone12,3"])   return @"iPhone 11 Pro";
+    if ([platform isEqualToString:@"iPhone12,1"])   return @"iPhone 11";
     if ([platform isEqualToString:@"iPhone11,8"])   return @"iPhone XR";
-    if ([platform isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max (A1921/A2101/A2102/A2104)";
+    if ([platform isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max Global";
     if ([platform isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";
     if ([platform isEqualToString:@"iPhone11,2"])   return @"iPhone XS";
-    if ([platform isEqualToString:@"iPhone10,6"])   return @"iPhone X (A1901)";
+    if ([platform isEqualToString:@"iPhone10,6"])   return @"iPhone X";
     if ([platform isEqualToString:@"iPhone10,5"])   return @"iPhone 8 Plus (A1897)";
     if ([platform isEqualToString:@"iPhone10,4"])   return @"iPhone 8 (A1905)";
-    if ([platform isEqualToString:@"iPhone10,3"])   return @"iPhone X (A1865/A1902)";
+    if ([platform isEqualToString:@"iPhone10,3"])   return @"iPhone X Global";
     if ([platform isEqualToString:@"iPhone10,2"])   return @"iPhone 8 Plus (A1864/A1898/A1899)";
     if ([platform isEqualToString:@"iPhone10,1"])   return @"iPhone 8 (A1864/A1898/A1899)";
     // 日行两款手机型号均为日本独占，可能使用索尼FeliCa支付方案而不是苹果支付
@@ -92,10 +95,10 @@
     if ([platform isEqualToString:@"iPhone8,1"])    return @"iPhone 6s";
     if ([platform isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
     if ([platform isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
-    if ([platform isEqualToString:@"iPhone6,2"])    return @"iPhone 5s (A1457/A1518/A1528/A1530)";
-    if ([platform isEqualToString:@"iPhone6,1"])    return @"iPhone 5s (A1453/A1533)";
-    if ([platform isEqualToString:@"iPhone5,4"])    return @"iPhone 5c (A1507/A1516/A1526/A1529)";
-    if ([platform isEqualToString:@"iPhone5,3"])    return @"iPhone 5c (A1456/A1532)";
+    if ([platform isEqualToString:@"iPhone6,2"])    return @"iPhone 5s Global";
+    if ([platform isEqualToString:@"iPhone6,1"])    return @"iPhone 5s GSM";
+    if ([platform isEqualToString:@"iPhone5,4"])    return @"iPhone 5c Global";
+    if ([platform isEqualToString:@"iPhone5,3"])    return @"iPhone 5c GSM";
     if ([platform isEqualToString:@"iPhone5,2"])    return @"iPhone 5 (CDMA)";
     if ([platform isEqualToString:@"iPhone5,1"])    return @"iPhone 5 (GSM)";
     if ([platform isEqualToString:@"iPhone4,1"])    return @"iPhone 4S";
@@ -116,10 +119,10 @@
     if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G (A1213)";
     
     // iPad
-    if ([platform isEqualToString:@"iPad11,4"])     return @"iPad Air 3 (A2123/A2153/A2154)";
-    if ([platform isEqualToString:@"iPad11,3"])     return @"iPad Air 3 (A2152)";
-    if ([platform isEqualToString:@"iPad11,2"])     return @"iPad Mini 5 (A2124/A2125/A2126)";
-    if ([platform isEqualToString:@"iPad11,1"])     return @"iPad Mini 5 (A2133)";
+    if ([platform isEqualToString:@"iPad11,4"])     return @"iPad Air 3";
+    if ([platform isEqualToString:@"iPad11,3"])     return @"iPad Air 3 WiFi";
+    if ([platform isEqualToString:@"iPad11,2"])     return @"iPad Mini 5";
+    if ([platform isEqualToString:@"iPad11,1"])     return @"iPad Mini 5 WiFi";
     if ([platform isEqualToString:@"iPad8,8"])      return @"iPad Pro 3 (12.9-inch) (A1895/A1983/A2014)";
     if ([platform isEqualToString:@"iPad8,7"])      return @"iPad Pro 3 (12.9-inch) (A1895/A1983/A2014)";
     if ([platform isEqualToString:@"iPad8,6"])      return @"iPad Pro 3 (12.9-inch) (A1876)";
