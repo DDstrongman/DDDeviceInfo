@@ -2,8 +2,8 @@
 //  DDDeviceInfo.h
 //  XXDNew
 //
-//  Created by 李胜书 on 2017/6/5.
-//  Copyright © 2017年 Xinxindai. All rights reserved.
+//  Created by DDLi on 2017/6/5.
+//  Copyright © 2017年 DDLi. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
