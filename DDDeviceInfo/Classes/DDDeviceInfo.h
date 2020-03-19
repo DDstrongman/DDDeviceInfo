@@ -43,6 +43,6 @@
 /**
  手机的idfa
  */
-@property (nonatomic, strong) NSString *idfa
+@property (nonatomic, strong) NSString *idfa;
 
 @end
