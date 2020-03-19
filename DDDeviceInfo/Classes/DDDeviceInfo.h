@@ -40,5 +40,9 @@
  手机的uuid
  */
 @property (nonatomic, strong) NSString *uuid;
+/**
+ 手机的idfa
+ */
+@property (nonatomic, strong) NSString *idfa
 
 @end
