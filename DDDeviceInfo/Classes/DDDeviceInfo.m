@@ -71,6 +71,11 @@
     NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
     
     // iPhone
+    if ([platform isEqualToString:@"iPhone13,4"])   return @"iPhone 12 Pro Max";
+    if ([platform isEqualToString:@"iPhone13,3"])   return @"iPhone 12 Pro";
+    if ([platform isEqualToString:@"iPhone13,2"])   return @"iPhone 12";
+    if ([platform isEqualToString:@"iPhone13,1"])   return @"iPhone 12 mini";
+    if ([platform isEqualToString:@"iPhone12,8"])   return @"iPhone SE 2nd Gen";
     if ([platform isEqualToString:@"iPhone12,5"])   return @"iPhone 11 Pro Max";
     if ([platform isEqualToString:@"iPhone12,3"])   return @"iPhone 11 Pro";
     if ([platform isEqualToString:@"iPhone12,1"])   return @"iPhone 11";
@@ -119,6 +124,11 @@
     if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G (A1213)";
     
     // iPad
+    if ([platform isEqualToString:@"iPad13,2"])     return @"iPad Air 4th Gen (WiFi+Cellular)";
+    if ([platform isEqualToString:@"iPad13,1"])     return @"iPad Air 4th Gen (WiFi)";
+    if ([platform isEqualToString:@"iPad11,7"])     return @"iPad 8th Gen (WiFi+Cellular)";
+    if ([platform isEqualToString:@"iPad11,6"])     return @"iPad 8th Gen (WiFi)";
+    
     if ([platform isEqualToString:@"iPad11,4"])     return @"iPad Air 3";
     if ([platform isEqualToString:@"iPad11,3"])     return @"iPad Air 3 WiFi";
     if ([platform isEqualToString:@"iPad11,2"])     return @"iPad Mini 5";
@@ -189,6 +199,18 @@
     if ([platform isEqualToString:@"AppleTV2,1"])   return @"AppleTV 2";
     
     //Apple Watch
+    if ([platform isEqualToString:@"Watch5,12"])     return @"Apple Watch SE 44mm case (GPS+Cellular)";
+    if ([platform isEqualToString:@"Watch5,11"])     return @"Apple Watch SE 40mm case (GPS+Cellular)";
+    if ([platform isEqualToString:@"Watch5,10"])     return @"Apple Watch SE 44mm case (GPS)";
+    if ([platform isEqualToString:@"Watch5,9"])     return @"Apple Watch SE 40mm case (GPS)";
+    if ([platform isEqualToString:@"Watch6,4"])     return @"Apple Watch Series 6 44mm case (GPS+Cellular)";
+    if ([platform isEqualToString:@"Watch6,3"])     return @"Apple Watch Series 6 40mm case (GPS+Cellular)";
+    if ([platform isEqualToString:@"Watch6,2"])     return @"Apple Watch Series 6 44mm case (GPS)";
+    if ([platform isEqualToString:@"Watch6,1"])     return @"Apple Watch Series 6 40mm case (GPS)";
+    if ([platform isEqualToString:@"Watch5,4"])     return @"Apple Watch Series 5 44mm case (GPS+Cellular)";
+    if ([platform isEqualToString:@"Watch5,3"])     return @"Apple Watch Series 5 40mm case (GPS+Cellular)";
+    if ([platform isEqualToString:@"Watch5,2"])     return @"Apple Watch Series 5 44mm case (GPS)";
+    if ([platform isEqualToString:@"Watch5,1"])     return @"Apple Watch Series 5 40mm case (GPS)";
     if ([platform isEqualToString:@"Watch4,4"])     return @"Apple Watch Series 4 (A1976/A2008)";
     if ([platform isEqualToString:@"Watch4,3"])     return @"Apple Watch Series 4 (A1975/A2007)";
     if ([platform isEqualToString:@"Watch4,2"])     return @"Apple Watch Series 4 (A1978)";
